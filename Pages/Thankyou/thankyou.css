@@ -1,0 +1,39 @@
+@import "../../CSS/_reset.css";
+@import "../../CSS/_colors.css";
+@import"../../CSS/_scrollbar.css";
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h2, a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+}
+
+a{
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    background: var(--tertiary);
+    height: 2em;
+    width: 6em;
+    border-radius:8px;
+    box-shadow: var(--tertiary) 1px 1px;
+}

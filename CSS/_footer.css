@@ -1,0 +1,61 @@
+@import "_colors.css";
+
+.footer_body{
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 10vh;
+    background: var(--primary);
+}
+.footer{
+    position: relative;
+    width:100%;
+    height: 100%;
+    background: var(--tertiary);
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.social_icon, .footer_menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.social_icon li, .footer_menu li{
+    list-style: none;
+}
+.social_icon li a {
+    font-size:2em;
+    color: var(--white);
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+.social_icon li a:hover{
+    transform: translateY(-10px);
+}
+.footer_menu li a{
+    font-size:1em;
+    color: var(--white);
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+}
+.footer_menu li a:hover{
+    opacity: 1;
+
+}
+.footer p{
+    color: var(--white);
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 1em;
+
+}

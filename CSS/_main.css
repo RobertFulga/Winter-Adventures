@@ -1,0 +1,66 @@
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.about_us{
+    height: 60vh;
+    width:80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper{
+    display:inline-flex;
+}
+
+.static_text{
+    font-family: sans-serif;
+    color: black;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.dynamic_text{
+    font-family: sans-serif;
+    margin-left: 10px;
+    height: 4em;
+    line-height:4em;
+    overflow: hidden;
+}
+
+.dynamic_text li{
+    color: var(--secondary);
+    list-style: none;
+    font-size:3em;
+    font-weight: bold;
+    position:relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+}
+@keyframes slide{
+    100%{top:-255px;}
+}
+
+.dynamic_text li span{
+    position: relative;
+}
+
+.dynamic_text li span:after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: white;
+    border-left: 2px solid white;
+    animation: typing 1.5s steps(14) infinite;
+}
+
+@keyframes typing{
+    100%{left: 100%; margin: 0 -35px 0 35px;}
+}
+

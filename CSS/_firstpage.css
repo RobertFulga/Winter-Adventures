@@ -1,0 +1,127 @@
+.zoom{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    background: url(../images/background.jpg);
+    background-size: cover;
+}
+@media screen and (min-width: 991px){
+    .zoom{
+        height: 1000px;
+    }
+}
+.zoom:before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    z-index: 1000;
+    background: linear-gradient(transparent, var(--white));
+}
+.zoom #layer1{
+    position: absolute;
+    left: 40%;
+    width: 100%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+.zoom #layer2{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    z-index: 9;
+}
+.zoom #text {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    transform: translateY(50%);
+}
+
+.video_section{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+video{
+    justify-content:center;
+    align-items: center;
+    width: 60%;
+    height: 60%;
+    border-radius: 4px;
+}
+
+.services{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.service_title{
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top:10px;
+    letter-spacing:.2rem;
+    text-align: center;
+}
+.service_title span{
+    color: var(--secondary);
+}
+.service_top p{
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.4rem;
+    font-weight: 300;
+    letter-spacing:.05rem;
+}
+.service_bottom{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+.service_icon{
+    height:80px;
+    width:80px;
+}
+.service_icon img{
+    height:100%;
+    width:100%;
+}
+.service_item{
+    flex-basis: 80%;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 10px 5%;
+    position: relative;
+    background: var(--tertiary);
+
+}
+.service_item h3{
+    padding: 30px 0;
+    color: var(--white);
+    text-transform: uppercase;
+    margin: 4px;
+    letter-spacing:.05rem
+}
+.service_item p{
+    color: var(--white);
+    text-align: left;
+    font-size: 1.1rem;
+    letter-spacing:.05rem
+}
+

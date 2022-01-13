@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+</head>
+<body>
+<input type="checkbox" id="nav_toggle" class="nav_toggle">
+<label for="nav_toggle" class="nav_toggle_label">
+    <span></span>
+</label>
+<nav class="nav">
+        <ul class="menu">
+            <li> <a href="../../index.html">Home</a></li>
+            <li> <a href="../../index.html#about_us">About Us</a></li>
+            <li> <a href="../Atv/allterrain.html">All-terrain</a></li>
+            <li> <a href="../Snowmobile/snowmobile.html">Snowmobiles</a></li>
+            <li> <a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="main_section">
+        <div class="contact_us">
+            <div class="title">
+                <h2>Get in touch with us</h2>
+            </div>
+            <div class="contact_box">
+                <div class="contact form">
+                    <h3>Send a message, please enter:</h3>
+                    <form action="https://formsubmit.co/fulgarobert1@gmail.com" method="POST">
+                        <div class="form_box">
+                            <div class="form_row">
+                                <div class="form_input">
+                                    <span>Your name</span>
+                                        <input type="text" name="name" placeholder="Name" required>
+                                </div>
+                                <div class="form_input">
+                                    <span>Your Surname</span>
+                                        <input type="text" name="surname" placeholder="Surname" required>
+                                </div>
+                            </div>
+                            <div class="form_row">
+                                <div class="form_input">
+                                    <span>Your E-mail</span>
+                                        <input type="email" name="email" placeholder="Email Address" required>
+                                </div>
+                                <div class="form_input">
+                                    <span>Your phone number</span>
+                                        <input type="text" placeholder="+40 712 345 678">
+                                </div>
+                            </div>
+                            <div class="form_msg">
+                                <div class="form_input">
+                                    <span>Leave your message</span>
+                                        <textarea placeholder="Write your message here..."></textarea>
+                                </div>
+                            </div>
+                            <div class="form_msg">
+                                <div class="form_input">
+                                    <input type="hidden" name="_subject" value="New email from your project!">
+                                    <input type="Submit" value="Send">
+                                    <!-- Acest link va fi schimbat cu link-ul paginii de "thank you" odata cu lansarea
+                                    site-ului in online pana atunci are doar rol de reminder
+                                    <input type="hidden" name="_next" value="https://robertfulga.github.io/index.html">
+                                    -->
+                                    <input type="hidden" name="_captcha" value="false">
+                                    <input type="hidden" name="_template" value="table">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact info">
+                    <h3>Contact Info</h3>
+                    <div class="info_box">
+                        <div>
+                            <span><ion-icon name="location"></ion-icon></span>
+                            <p>no. 175 Traian, Drobeta Turnu Severin<br>Romania</p>
+                        </div>
+                        <div>
+                            <span><ion-icon name="mail"></ion-icon></span>
+                            <a href="mailto:fulgarobert1@gmail.com">fulgarobert1@gmail.com</a>
+                        </div>
+                         <div>
+                            <span><ion-icon name="call"></ion-icon></span>
+                            <a href="tel:+40712345678">+40 712 345 678</a>
+                         </div>
+                        <ul class="social_icn">
+                            <li><a href="https://www.facebook.com"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                            <li><a href="https://www.istagram.com"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                            <li><a href="https://www.twitter.com"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                            <li><a href="https://www.whatsapp.com"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+                            <li><a href="https://github.com/RobertFulga"><ion-icon name="logo-github"></ion-icon></a></li>
+                            <li><a href="https://www.linkedin.com/in/robert-fulga-389792203/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                        </ul>
+                    </div>
+                </div>
+                    <div class="contact map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14308.58663421283!2d22.661969659346667!3d44.63417924599082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sro!2sro!4v1639251062951!5m2!1sro!2sro" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
